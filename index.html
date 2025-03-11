@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marin Marinov - Front-End Software Engineer</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        color: #3b4348;
+        line-height: 1.6;
+        border: 0 solid;
+        box-sizing: border-box;
+        margin: 0;
+        background-color: #777;
+        padding: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      ul,
+      li,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul li {
+        margin-left: 24px;
+      }
+
+      ul.none li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #3b4348;
+        font-weight: 800;
+      }
+
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      h2 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      h3 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      h4 {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: white;
+        max-width: 960px;
+        padding: 32px;
+        gap: 32px;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .profile-image-placeholder {
+        width: 150px;
+        height: 150px;
+        background-color: #ddd;
+        border-radius: 50%;
+      }
+
+      .content-columns {
+        display: flex;
+        gap: 32px;
+      }
+
+      .left-column {
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .right-column {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      #tech-stack ul {
+        row-gap: 8px;
+        column-gap: 8px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .article-heading {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      .article-heading p {
+        min-width: fit-content;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+
+        h2 {
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+        h3 {
+          font-size: 20px;
+          line-height: 28px;
+        }
+
+        h4 {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .container {
+          gap: 24px;
+          padding: 32px 16px;
+        }
+
+        .profile-image-placeholder {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 0;
+        }
+
+        .content-columns {
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .left-column,
+        .right-column {
+          flex-basis: 100%;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .left-column {
+          order: 1;
+        }
+
+        .right-column {
+          order: 0;
+        }
+
+        .article-heading {
+          flex-direction: column;
+          justify-content: baseline;
+          gap: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <div class="profile-image-placeholder">
+          <img
+            src="img.png"
+            alt="M M"
+            style="
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+              display: block;
+            "
+          />
+        </div>
+        <div class="name-title-block">
+          <h1>Marin Marinov</h1>
+          <h2>Front-End Software Engineer</h2>
+        </div>
+      </div>
+
+      <section id="summary">
+        <h2>Summary</h2>
+        <p>
+          I am a software developer with over 6 years of experience specialising
+          in front-end development. Proficient in JavaScript, Vue.js,
+          TypeScript, and building micro-frontend applications with single-spa,
+          I have a strong foundation in Clean Architecture and Domain-Driven
+          Design (DDD). I enjoy working in a team, learning new things and
+          challenging myself with new technologies. I'm also passionate about
+          solving complex problems and finding the best approach.
+        </p>
+      </section>
+
+      <div class="content-columns">
+        <div class="left-column">
+          <section id="contact-info">
+            <h2>Contact</h2>
+            <ul class="none">
+              <li>Phone: <a href="tel:+359876226870">+359 876 226 870</a></li>
+              <li>
+                Email:
+                <a href="mailto:marinoﬀ3417@gmail.com">marinoﬀ3417@gmail.com</a>
+              </li>
+              <li>
+                GitHub:
+                <a href="https://github.com/marin51" target="_blank"
+                  >github.com/marin51</a
+                >
+              </li>
+              <li>Location: Sofia, Bulgaria</li>
+            </ul>
+          </section>
+
+          <section id="tech-stack">
+            <h2>Tech Stack</h2>
+            <ul class="none">
+              <li>Vue.js</li>
+              <li>Typescript</li>
+              <li>Javascript</li>
+              <li>Angular</li>
+              <li>HTML5</li>
+              <li>Firebase</li>
+              <li>MySQL</li>
+              <li>Single-spa</li>
+              <li>CSS/SCSS</li>
+              <li>Jest</li>
+              <li>Playwright</li>
+              <li>Cypress</li>
+              <li>AWS</li>
+              <li>Figma</li>
+              <li>Git</li>
+              <li>Gitlab/Github</li>
+              <li>NPM</li>
+              <li>Webpack/Vite</li>
+              <li>CI/CD</li>
+              <li>Postman</li>
+              <li>REST</li>
+              <li>Jira</li>
+              <li>Agile</li>
+              <li>Scrum</li>
+            </ul>
+          </section>
+
+          <section id="languages">
+            <h2>Languages</h2>
+            <ul class="none">
+              <li>BULGARIAN - Native</li>
+              <li>ENGLISH - Intermediate</li>
+            </ul>
+          </section>
+
+          <section id="find-me-online">
+            <h2>Find me online</h2>
+            <ul class="none">
+              <li>
+                LinkedIn:
+                <a
+                  href="http://linkedin.com/in/marin-marinov-446041176/"
+                  target="_blank"
+                  >LinkedIn Profile</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="right-column">
+          <section id="experience">
+            <h2>Experience</h2>
+            <article>
+              <h3>Senior Software Engineer</h3>
+              <p>Just Eat Takeaway.com, Sofia, Bulgaria</p>
+              <p>12/2021 - Present</p>
+              <ul>
+                <li>
+                  Developed and maintained a restaurant platform for the
+                  European and American markets.
+                </li>
+                <li>
+                  Developed modern micro-frontend modules using Vue 3 and Clean
+                  Architecture principles, ensuring a structured codebase split
+                  for further improvement.
+                </li>
+                <li>
+                  Collaborated with international teams and delivered end-to-end
+                  solutions.
+                </li>
+                <li>
+                  Facilitated the onboarding of junior developers, providing
+                  mentorship and regular pair programming sessions and knowledge
+                  sharing sessions.
+                </li>
+                <li>
+                  Improved legacy projects by implementing modern technologies,
+                  reducing build times, and optimising processes.
+                </li>
+              </ul>
+            </article>
+
+            <article>
+              <h3>Software Engineer</h3>
+              <p>Meetingbox, Sofia, Bulgaria</p>
+              <p>06/2018 - 12/2021</p>
+              <p>Event Management, Mobile Event Apps and Virtual Events</p>
+              <ul>
+                <li>
+                  Developed and maintained mobile hybrid applications for iOS
+                  and Android with functionalities such as encrypted chat rooms,
+                  activity feeds, photo galleries, etc.
+                </li>
+                <li>Mentored newcomers into getting into the projects.</li>
+                <li>
+                  Redesigned and restructured projects from native JS and PHP to
+                  PWA-based SPA on Vue.js.
+                </li>
+              </ul>
+            </article>
+          </section>
+
+          <section id="education">
+            <h2>Education</h2>
+            <article>
+              <div class="article-heading">
+                <h4>
+                  Bachelor's Degree in Computer Science and Software Engineering
+                </h4>
+                <p>2016-2020</p>
+              </div>
+              <p>Technical University of Sofia</p>
+            </article>
+
+            <article>
+              <div class="article-heading">
+                <h4>System Programming</h4>
+                <p>2011-2016</p>
+              </div>
+              <p>General Vladimir Zaimov High School - Sopot</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
